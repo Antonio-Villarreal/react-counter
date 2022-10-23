@@ -9,11 +9,18 @@ export default function Counter() {
     setCount(count - 1);
   }
   return (
+    // <div>
+    //   <h2>Counter Assignment</h2>
+    //   <p>{count}</p>
+    //   <button onClick={increment}> + </button>
+    //   <button onClick={decrement}> - </button>
+    // </div>
+
     <div>
       <h2>Counter Assignment</h2>
       <p>{count}</p>
-      <button onClick={increment}> + </button>
-      <button onClick={decrement}> - </button>
+      <button onClick={() => setCount(count + 1)}> + </button>
+      <button onClick={() => setCount(count - 1)}> - </button>
     </div>
   );
 }
